@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        #box1{
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            margin:10px;
+            text-align: center;
+            font-size: larger;
+            border: 5px solid;
+            border-radius: 10px;
+           display: block;
+           position: static;
+        }
+         #box2{
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            margin:10px;
+            display: block;
+            position: relative;
+            top: 10px;
+            left: 50px;
+            /*display incline do not consider height width*/
+        }
+         #box3{
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+           display: block;
+           position: absolute;
+
+           
+        }
+         #box4{
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            margin:10px;
+           display: block;
+           position: fixed;
+           top: 50px;
+           left: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+     <div id="box3">box3</div>
+    <div id="box4">box4</div>
+</body>
+</html>

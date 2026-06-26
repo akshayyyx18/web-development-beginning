@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            border: 3px dashed;
+            border-radius: 30px;
+        }
+        #heading{
+            font-size: large;
+            text-align: center;
+        }
+        #container{
+            border: 5px solid;
+            display: flex;
+            justify-content: center;
+            /*justify content used for spacing of content*/
+            flex-wrap: wrap;
+            /*align-item used to set item in desired postion along y axis || align content is used to align content in center without much space*/
+            /*align-self>>align item*/
+            /*flex-grow and flex shrink*/
+        }
+        #box1{ background-color: azure;}
+        #box2{ background-color: aqua;}
+        #box3{ background-color: rgb(30, 255, 0);}
+        #box4{ background-color: rgb(0, 4, 255);}
+    </style>
+</head>
+<body>
+    <h1 id="heading">Flex Container</h1>
+    <div id="container">
+        <div id="box1" class="box">Flex item 1</div>
+        <div id="box2" class="box">Flex item 2</div>
+        <div id="box3" class="box">Flex item 3</div>
+        <div id="box4" class="box">Flex item 4</div>
+        <div id="box4" class="box">Flex item 4</div>
+        <div id="box4" class="box">Flex item 4</div>
+        <div id="box4" class="box">Flex item 4</div>
+    </div>
+</body>
+</html>
