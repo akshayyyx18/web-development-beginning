@@ -1,0 +1,37 @@
+#calculator {
+    border: 1px solid rgb(208, 203, 203);
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    width: 125px;
+    height: 200px;
+
+}
+#display {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+#buttonsline1 {
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    word-spacing: 5px ;
+}
+#buttonsline2 {
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    word-spacing: 5px;
+}
+#buttonsline3 {
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    word-spacing: 5px;
+}
+#buttonsline4 {
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    word-spacing: 5px;
+}

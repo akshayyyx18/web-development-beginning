@@ -1,0 +1,12 @@
+#add-to-bag {
+    background-color: lawngreen;
+    border: none;
+    color: black;
+    border-radius: 12px;
+    padding: 4px 8px;
+}
+#wishlist {
+    border-radius: 5px;
+    padding: 2px 25px;
+    border: 2px solid black;
+}
