@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name: "John",
+            age: 30,
+            city: "New York",
+            "his-gender": "male",
+            rating:{
+                score: 4.5,
+                reviews: 100
+            },
+            //function inside an object are called methods
+            //math.random here maths is  object and random is method
+            displayInfo: function() {
+                console.log(`Name: ${this.name}, Age: ${this.age}, City: ${this.city}`);
+            }
+        };
+        console.log(person.name);
+        console.log(person.age);
+        console.log(person.city);
+        console.log(person["name"]);
+        console.log(person["his-gender"]);
+
+
+        //adding new property to object
+        person.country = "USA";
+        console.log(person.country);
+
+        //deleting property from object
+        delete person.city;
+        console.log(person.city); //undefined
+        person.displayInfo();
+
+       //**** autoboxing ****
+        //automatic conversion of primitive into objects. allows properties and methods to b used on primitves
+        //example: strings have properties and methods like length and toUpperCase etc
+        console.log('this is coding'.length)
+        console.log('this is coding'.toUpperCase())
+        console.log('this is coding'.replace('coding','something'))
+        
+        //**OBJECT REFERENCE**
+        //objects are reference types. when we assign an object to another variable, we are assigning a reference to the original object, not a copy of the object. changes made to the new variable will affect the original object. just like pass by reference in functions.
+        let person2 = person;
+        person2.name = "Jane";
+        console.log(person.name); // Jane
+        console.log(person2.name); // Jane
+
+        //**object destructuring**
+        //object destructuring is a way to extract properties from an object and assign them to variables
+        let { name, age, city } = person;
+        console.log(name, age, city);
+        //method shorthand
+        let person3 = {
+            name: "John",
+            age: 30,
+            city: "New York",
+            displayInfo() {
+                console.log(`Name: ${this.name}, Age: ${this.age}, City: ${this.city}`);
+            }
+        };
+
+        
+    </script>
+</body>
+</html>
