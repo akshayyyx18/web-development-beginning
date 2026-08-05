@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Product Information</h1>
+    <script>
+        let product = {
+            name: "Laptop",
+            price: 1000,
+            rating: {
+                score: 4.5,
+                reviews: 100
+            }
+        };
+        // console.log(typeof product);
+        // console.log(product);
+        // let str =JSON.stringify(product);
+        // console.log(str);
+        // console.log(typeof str);
+        // let newproduct = JSON.parse(str);
+        // console.log(newproduct);
+        // console.log(typeof newproduct);
+
+        //javascript object notation. common in network calls and data storage. JSON>stringify converts object to string and parse converts string to object. JSON is a subset of javascript object. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.
+        //JSON requires double quotes. escaped as\".  JSON is data format that is used to represent structured data. It is commonly used for transmitting data in web applications between a server and a client. JSON is easy for humans to read and write, and it is easy for machines to parse and generate. JSON is often used in RESTful APIs to exchange data between a client and a server. JSON can represent four primitive types (strings, numbers, booleans, and null) and two structured types (objects and arrays). JSON objects are written in key/value pairs, where the key is a string and the value can be any valid JSON data type. JSON arrays are ordered lists of values, which can be of any valid JSON data type.
+        //JS object is a data structure that allows you to store collections of data in key-value pairs. It is a fundamental part of JavaScript and is used extensively in web development. JS objects can be created using object literals, constructors, or classes. They can also have methods, which are functions that are associated with the object. JS objects are mutable, meaning that their properties can be changed or added after they are created. JS objects can also be nested, allowing for complex data structures to be created. Overall, JS objects are a powerful and flexible way to store and manipulate data in JavaScript.
+        localStorage.setItem("name", "John");
+        localStorage.setItem("age", "30");
+    </script>
+</body>
+</html>
