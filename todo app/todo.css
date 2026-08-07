@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+
+
+.button1{
+    border-color: darkgreen;
+     margin: 5px;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    color: ghostwhite;
+    background-color: darkgreen;
+}
+.td-delete{
+    margin: 5px;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    color: ghostwhite;
+    background-color: rgb(109, 10, 10);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+}
