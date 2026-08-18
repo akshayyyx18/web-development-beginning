@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum = function(num1,num2){
+            return num1+num2;
+            //func in js are first class citizen, they can be assigned to variables.
+            //func defined without name , often assigned to a variable
+            //invoked using() after func name or variable
+        };
+        console.log(sum(4,5));
+        let sumThreeNumbers= function(num1, num2, num3, sumTwoNumbers) {
+            let sum1=sumTwoNumbers(num1,num2);
+            return sumTwoNumbers(sum1,num3);
+        }
+        console.log(sumThreeNumbers(4,5,6,sum))
+    </script>
+</body>
+</html>
